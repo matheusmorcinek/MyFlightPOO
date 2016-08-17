@@ -23,13 +23,16 @@ public class GerenciadorRotas {
 		return nova;
 	}
 
-	public Rota buscarPorOrigem(Aeroporto aero) {
+	public ArrayList<Rota> buscarPorOrigem(Aeroporto orig) {
+		ArrayList<Rota> nova = new ArrayList<>();
+		
 		for (Rota r : rotas) {
-			if (aero.equals(r.getOrigem())) {
-				return r;
+			if (orig.equals(r.getOrigem())) {
+				nova.add(r);
 			}
 		}
-		return null;
+
+		return nova;
 	}
 
 }
