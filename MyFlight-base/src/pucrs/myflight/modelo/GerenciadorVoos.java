@@ -29,7 +29,7 @@ public class GerenciadorVoos {
 
 		for (Voo v : voos) {
 
-			if (data.equals(v.getDatahora())) {
+			if (data.equals(v.getDatahora().toLocalDate())) {
 				nova.add(v);
 			}
 

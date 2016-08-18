@@ -27,7 +27,7 @@ public class GerenciadorRotas {
 		ArrayList<Rota> nova = new ArrayList<>();
 		
 		for (Rota r : rotas) {
-			if (orig.equals(r.getOrigem())) {
+			if (orig.getCodigo().equals(r.getOrigem().getCodigo())) {
 				nova.add(r);
 			}
 		}
