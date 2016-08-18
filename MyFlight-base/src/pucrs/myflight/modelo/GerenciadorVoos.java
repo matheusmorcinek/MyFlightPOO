@@ -1,6 +1,7 @@
 package pucrs.myflight.modelo;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 import java.util.ArrayList;
 
 public class GerenciadorVoos {
@@ -24,7 +25,7 @@ public class GerenciadorVoos {
 		return nova;
 	}
 
-	public ArrayList<Voo> buscarData(LocalDateTime data) {
+	public ArrayList<Voo> buscarData(LocalDate data) {
 		ArrayList<Voo> nova = new ArrayList<>();
 
 		for (Voo v : voos) {

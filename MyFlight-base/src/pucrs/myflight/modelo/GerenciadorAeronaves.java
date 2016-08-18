@@ -19,17 +19,17 @@ public class GerenciadorAeronaves {
 		for (Aeronave a : aeronaves) {
 			nova.add(a);
 		}
-
+		// return new ArrayList<Aeronave>(aeronaves);
 		return nova;
 	}
 
-	public Aeronave buscarPorCodigo(String cod){
-		for(Aeronave a : aeronaves){
-			if(cod.equals(a.getCodigo())){
+	public Aeronave buscarPorCodigo(String cod) {
+		for (Aeronave a : aeronaves) {
+			if (cod.equals(a.getCodigo())) {
 				return a;
 			}
 		}
 		return null;
 	}
-	
+
 }
