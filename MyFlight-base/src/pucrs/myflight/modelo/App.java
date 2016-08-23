@@ -64,6 +64,9 @@ public class App {
 		Aeroporto poa = new Aeroporto("POA", "Salgado Filho Intl Apt", new Geo(-23.4356, -46.4731));
 		Aeroporto gru = new Aeroporto("GRU", "São Paulo Guarulhos Intl Apt", new Geo(-23.4356, -46.4731));
 
+		
+		
+		
 		GerenciadorAeroportos gerAeroportos = new GerenciadorAeroportos();
 		gerAeroportos.adicionar(poa);
 		gerAeroportos.adicionar(gru);
@@ -84,8 +87,9 @@ public class App {
 		// Rota: GRU -> POA
 		Rota rota1 = rotas.get(0);
 		Voo voo1 = new Voo(rota1, datahora1, duracao1);
+		Voo voo2 = new Voo(rota1, duracao1);
 		gerVoos.adicionar(voo1);
-		
+		gerVoos.adicionar(voo2);
 		
 		// Teste: procurar o vôo
 		ArrayList<Voo> meusVoos = gerVoos.buscarData(LocalDate.of(2016, 8, 18));
@@ -96,6 +100,11 @@ public class App {
 			System.out.println(v.getDatahora());
 		}
 		
+		Geo geo1  = new Geo(-23.4356, -46.4731);
+		Geo geo2 = new Geo(-23.4356, -46.4731);
+		
+		
+		System.out.println("Resultado distancia: "+ Geo.distancia(geo1, geo2));
 		
 	}
 

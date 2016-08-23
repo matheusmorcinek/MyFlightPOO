@@ -20,9 +20,16 @@ public class Voo {
 	}
 	
 	public Voo(Rota rota, Duration duracao){
+		/*
 		this.rota = rota;
+		this.datahora = LocalDateTime.of(2016, 8, 12, 12, 00);
 		this.duracao = duracao;
 		this.status = Status.CONFIRMADO;
+		*/
+		
+		//reutilizaçao de construtor
+		this(rota, LocalDateTime.of(2016, 8, 12, 12, 00), duracao);
+	
 	}
 	
 	public Rota getRota() {
