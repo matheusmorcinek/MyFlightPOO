@@ -25,12 +25,6 @@ public class Voo {
 		this.status = Status.CONFIRMADO;
 	}
 	
-	public Voo(Rota rota){
-		this.rota = rota;
-		
-		this.status = Status.CONFIRMADO;
-	}
-	
 	public Rota getRota() {
 		return rota;
 	}
