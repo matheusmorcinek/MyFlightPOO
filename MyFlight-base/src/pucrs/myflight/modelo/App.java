@@ -9,15 +9,22 @@ public class App {
 
 	public static void main(String[] args) {
 
+		System.out.println("Total de cias: "+CiaAerea.getTotalCias());
+		
 		CiaAerea gol = new CiaAerea("G3", "Gol linhas areas sa");
+		System.out.println("Total de cias: "+CiaAerea.getTotalCias());
 		CiaAerea latam = new CiaAerea("JJ", "Latam linhas areas");
+		System.out.println("Total de cias: "+CiaAerea.getTotalCias());
 		CiaAerea tap = new CiaAerea("TP", "TAP Portugal linhas aereas");
-
+		System.out.println("Total de cias: "+CiaAerea.getTotalCias());
+		
 		GerenciadorCias gerCias = new GerenciadorCias();
 		gerCias.adicionar(gol);
 		gerCias.adicionar(latam);
 		gerCias.adicionar(tap);
 
+		
+		
 		ArrayList<CiaAerea> todas = gerCias.listarTodas();
 
 		for (CiaAerea c : todas) {

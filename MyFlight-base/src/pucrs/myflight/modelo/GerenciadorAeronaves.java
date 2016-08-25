@@ -1,6 +1,7 @@
 package pucrs.myflight.modelo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class GerenciadorAeronaves {
 	private ArrayList<Aeronave> aeronaves;
@@ -11,6 +12,12 @@ public class GerenciadorAeronaves {
 
 	public void adicionar(Aeronave aviao) {
 		aeronaves.add(aviao);
+	}
+
+	public void ordenarAeronaves() {
+		//ordena lista de aeronaves
+		Collections.sort(aeronaves);
+	
 	}
 
 	public ArrayList<Aeronave> listarTodas() {
