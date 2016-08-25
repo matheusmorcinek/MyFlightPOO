@@ -16,6 +16,11 @@ public class Geo {
 	public double getLongitude() {
 		return longitude;
 	}
+	
+	public double distancia(Geo outra){
+		//Geo obj = new Geo(this.latitude, this.logitude);
+		return distancia(outra, this);
+	}
 
 	public static double distancia(Geo geo1, Geo geo2) {
 
