@@ -34,6 +34,6 @@ public class Aeronave implements Imprimivel, Contavel, Comparable<Aeronave> {
 	@Override
 	public int compareTo(Aeronave o) {
 		// TODO Auto-generated method stub
-		return descricao.compareTo(o.descricao);
+		return codigo.compareTo(o.codigo);
 	}
 }
