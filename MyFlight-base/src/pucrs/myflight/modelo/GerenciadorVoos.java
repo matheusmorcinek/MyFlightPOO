@@ -1,5 +1,7 @@
 package pucrs.myflight.modelo;
 
+import java.util.Comparator;
+
 import java.time.LocalDate;
 
 import java.util.ArrayList;
@@ -37,5 +39,14 @@ public class GerenciadorVoos {
 		}
 		return nova;
 	}
+	
+	 public void ordenaDataHora(){
+		    voos.sort(Comparator.comparing(Voo::getDatahora));
+		    }
+		    
+
+		    public void ordenaDataHoraDuracao(){
+		    voos.sort(Comparator.comparing(Voo::getDatahora).thenComparing(Voo::getDuracao));
+		    }
 
 }
