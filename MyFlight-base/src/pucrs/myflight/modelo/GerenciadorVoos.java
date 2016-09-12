@@ -19,12 +19,7 @@ public class GerenciadorVoos {
 	}
 
 	public ArrayList<Voo> listarTodos() {
-		ArrayList<Voo> nova = new ArrayList<>();
-
-		for (Voo v : voos) {
-			nova.add(v);
-		}
-		return nova;
+		return new ArrayList<Voo>(voos);
 	}
 
 	public ArrayList<Voo> buscarData(LocalDate data) {
@@ -39,14 +34,13 @@ public class GerenciadorVoos {
 		}
 		return nova;
 	}
-	
-	 public void ordenaDataHora(){
-		    voos.sort(Comparator.comparing(Voo::getDatahora));
-		    }
-		    
 
-		    public void ordenaDataHoraDuracao(){
-		    voos.sort(Comparator.comparing(Voo::getDatahora).thenComparing(Voo::getDuracao));
-		    }
+	public void ordenaDataHora() {
+		voos.sort(Comparator.comparing(Voo::getDatahora));
+	}
+
+	public void ordenaDataHoraDuracao() {
+		voos.sort(Comparator.comparing(Voo::getDatahora).thenComparing(Voo::getDuracao));
+	}
 
 }
