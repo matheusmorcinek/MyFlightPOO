@@ -26,7 +26,7 @@ public class Aeronave implements Imprimivel, Contavel, Comparable<Aeronave> {
 	}
 
 	@Override
-	public int totalAeronaves() {
+	public int getTotal() {
 		return totalAeronaves;
 	}
 
