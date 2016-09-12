@@ -14,6 +14,7 @@ public class GerenciadorCias {
 	}
 
 	public ArrayList<CiaAerea> listarTodas() {
+		/*
 		ArrayList<CiaAerea> nova = new ArrayList<>();
 
 		for (CiaAerea c : empresas) {
@@ -21,6 +22,8 @@ public class GerenciadorCias {
 		}
 
 		return nova;
+		*/
+		return new ArrayList<CiaAerea>(empresas);
 	}
 
 	public CiaAerea buscarCodigo(String codigo) {
