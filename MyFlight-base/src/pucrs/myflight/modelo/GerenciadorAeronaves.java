@@ -2,6 +2,7 @@ package pucrs.myflight.modelo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class GerenciadorAeronaves {
 	private ArrayList<Aeronave> aeronaves;
@@ -20,14 +21,25 @@ public class GerenciadorAeronaves {
 	
 	}
 
+	public void ordenarDescricao(){
+		aeronaves.sort(Comparator.comparing(Aeronave::getDescricao));
+	}
+	
+	public void ordenarCodigo(){
+		aeronaves.sort(Comparator.comparing(Aeronave::getCodigo));
+	}
+	
 	public ArrayList<Aeronave> listarTodas() {
+		/*
 		ArrayList<Aeronave> nova = new ArrayList<>();
 
 		for (Aeronave a : aeronaves) {
 			nova.add(a);
 		}
-		// return new ArrayList<Aeronave>(aeronaves);
 		return nova;
+		*/
+		return new ArrayList<Aeronave>(aeronaves);
+		
 	}
 
 	public Aeronave buscarPorCodigo(String cod) {
@@ -36,7 +48,7 @@ public class GerenciadorAeronaves {
 				return a;
 			}
 		}
-		return null;
+		return null; //nao achou
 	}
 
 }
