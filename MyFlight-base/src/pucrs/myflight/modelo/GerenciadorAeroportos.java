@@ -15,6 +15,7 @@ public class GerenciadorAeroportos {
 	}
 	
 	public ArrayList<Aeroporto> listarTodos(){
+		/*
 		ArrayList<Aeroporto> nova = new ArrayList<>();
 		
 		for(Aeroporto a : aeroportos){
@@ -22,6 +23,8 @@ public class GerenciadorAeroportos {
 		}
 		
 		return nova;
+		*/
+		return new ArrayList<Aeroporto>(aeroportos);
 	}
 	
 	public Aeroporto buscarPorCodigo(String cod){
@@ -30,7 +33,7 @@ public class GerenciadorAeroportos {
 				return a;
 			}
 		}
-		return null;
+		return null; //nao achou
 	}
 	
 	
