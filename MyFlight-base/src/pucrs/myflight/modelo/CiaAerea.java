@@ -11,6 +11,10 @@ public class CiaAerea {
 		this.nome = nome;
 		totalCias++;
 	}
+	
+	public String toString(){
+		return nome + "(" + codigo + ")";
+	}
 
 	public static int getTotalCias() {
 		return totalCias;
