@@ -40,9 +40,9 @@ public class App {
 
 		// teste Aeronaves
 
-		Aeronave boeing2 = new Aeronave("73G", "Boeing 737-700");
-		Aeronave boeing1 = new Aeronave("733", "Boeing 737-300");
-		Aeronave airbus1 = new Aeronave("380", "Airbus industrie A380");
+		Aeronave boeing2 = new Aeronave("73G", "Boeing 737-700", 350);
+		Aeronave boeing1 = new Aeronave("733", "Boeing 737-300", 366);
+		Aeronave airbus1 = new Aeronave("380", "Airbus industrie A380", 680);
 
 		GerenciadorAeronaves gerAeronaves = new GerenciadorAeronaves();
 
