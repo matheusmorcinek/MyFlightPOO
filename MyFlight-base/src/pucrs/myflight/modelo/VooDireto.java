@@ -15,14 +15,17 @@ public class VooDireto extends Voo {
 
 	@Override
 	public Rota getRota() {
-		// TODO Auto-generated method stub
-		return null;
+		return rota;
 	}
 
 	@Override
 	public Duration getDuracao() {
 		// calcular duracao em funcao da distancia
+		
+		
+		
 		return null;
+		
 	}
 
 	

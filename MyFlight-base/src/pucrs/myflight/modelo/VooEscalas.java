@@ -14,6 +14,9 @@ public class VooEscalas extends Voo{
 	}
 	
 	public Rota getRotaFinal() {
+		
+		
+		
 		return null;
 		//retornar primeira rota da lista
 		

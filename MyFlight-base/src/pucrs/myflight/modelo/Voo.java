@@ -16,8 +16,6 @@ public abstract class Voo {
 	}
 	
 	
-	
-	
 	public abstract Rota getRota();
 	
 	public LocalDateTime getDatahora() {
