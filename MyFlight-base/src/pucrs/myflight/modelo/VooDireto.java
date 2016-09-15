@@ -22,8 +22,6 @@ public class VooDireto extends Voo {
 	public Duration getDuracao() {
 		// calcular duracao em funcao da distancia
 		
-		
-		
 		return null;
 		
 	}

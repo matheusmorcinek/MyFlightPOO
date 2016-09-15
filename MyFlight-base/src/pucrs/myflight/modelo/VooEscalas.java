@@ -13,14 +13,16 @@ public class VooEscalas extends Voo{
 		rotas = new ArrayList<>();
 	}
 	
-	public Rota getRotaFinal() {
-		
-		
-		
-		return null;
-		//retornar primeira rota da lista
-		
+	public void adicionarRota(Rota r){
+		rotas.add(r);
 	}
+	
+	
+	public ArrayList<Rota> getRotas(){
+		return (ArrayList<Rota>) rotas.clone();
+	}
+	
+	
 	
 	@Override
 	public Duration getDuracao() {
@@ -31,12 +33,12 @@ public class VooEscalas extends Voo{
 	
 	@Override
 	public String toString(){
-		return super.toString();// + ", "+rotaFinal;
+		return super.toString();
 	}
 
 	@Override
 	public Rota getRota() {
-		// TODO Auto-generated method stub
+		// retornar a primeira roda da lista
 		return null;
 	}
 	

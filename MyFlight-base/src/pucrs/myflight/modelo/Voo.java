@@ -12,17 +12,18 @@ public abstract class Voo {
 	
 	public Voo(LocalDateTime datahora) {
 		this.datahora = datahora;
-		this.status = Status.CONFIRMADO; // default é confirmado
+		this.status = Status.CONFIRMADO; // default e confirmado
 	}
 	
 	
 	public abstract Rota getRota();
 	
+	public abstract Duration getDuracao();
+	
+
 	public LocalDateTime getDatahora() {
 		return datahora;
 	}
-	
-	public abstract Duration getDuracao();
 	
 	public Status getStatus() {
 		return status;
